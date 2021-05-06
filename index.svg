@@ -8,7 +8,7 @@
   <style>
     .header {
       font: 600 18px "Segoe UI", Ubuntu, Sans-Serif;
-      fill: #2f80ed;
+      fill: #fff;
       animation: fadeInAnimation 0.8s ease-in-out forwards;
     }
 
@@ -27,7 +27,14 @@
     }
   </style>
 
-  undefined
+  <defs>
+    <linearGradient
+            id="gradient" 
+            gradientTransform="rotate(30)"
+          >
+            <stop offset="0%" stop-color="#e96443" />,<stop offset="100%" stop-color="#904e95" />
+          </linearGradient>
+  </defs>
 
   <rect
     data-testid="card-bg"
@@ -37,7 +44,7 @@
     height="99%"
     stroke="#e4e2e2"
     width="800"
-    fill="#fffefe"
+    fill="url(#gradient)"
     stroke-opacity="1"
   />
 
@@ -47,4 +54,8 @@
       <text x="0" y="20" class="header" data-testid="header">This card is currently under development.</text>
     </g>
   </g>
+  <g data-testid="card-titlee" transform="translate(450, 95)">
+      <image href="./static/me.png" height="300" width="320"/>
+  </g>
+  
 </svg>
