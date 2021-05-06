@@ -12,18 +12,17 @@
       animation: fadeInAnimation 0.8s ease-in-out forwards;
     }
 
-    .stat {
-      font: 600 14px "Segoe UI", Ubuntu, "Helvetica Neue", Sans-Serif;
-      fill: #333;
+    .ore{
+      transform: scale(0);
+      animation: Scale 0.5s ease-in-out forwards;
     }
-    .stagger {
-      opacity: 0;
-      animation: fadeInAnimation 0.3s ease-in-out forwards;
+
+    @keyframes Scale {
+    from {
+      transform: scale(0) translate(450px, 95px);
     }
-    .rank-text {
-      font: 800 24px "Segoe UI", Ubuntu, Sans-Serif;
-      fill: #333;
-      animation: scaleInAnimation 0.3s ease-in-out forwards;
+    to {
+      transform: scale(1) translate(450px, 95px);
     }
   </style>
 
@@ -54,8 +53,7 @@
       <text x="0" y="20" class="header" data-testid="header">This card is currently under development.</text>
     </g>
   </g>
-  <g data-testid="card-titlee" transform="translate(450, 95)">
+  <g class="ore">
       <image href="./static/me.png" height="300" width="320"/>
   </g>
-  
 </svg>
