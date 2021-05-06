@@ -1,22 +1,33 @@
 <svg
-  width="800"
-  height="300"
-  viewBox="0 0 800 300"
+  width="495"
+  height="195"
+  viewBox="0 0 495 195"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <style>
-    .hoge {
+    .header {
+      font: 600 18px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #2f80ed;
+      animation: fadeInAnimation 0.8s ease-in-out forwards;
+    }
+
+    .stat {
+      font: 600 14px "Segoe UI", Ubuntu, "Helvetica Neue", Sans-Serif;
+      fill: #333;
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    .rank-text {
+      font: 800 24px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #333;
+      animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
   </style>
 
-  <defs>
-    <linearGradient id="gradient" gradientTransform="rotate(30)">
-      <stop offset="0%" stop-color="#d2f7f6" />
-      ,
-      <stop offset="100%" stop-color="#00c8ff" />
-    </linearGradient>
-  </defs>
+  undefined
 
   <rect
     data-testid="card-bg"
@@ -26,7 +37,13 @@
     height="99%"
     stroke="#e4e2e2"
     width="494"
-    fill="url(#gradient)"
+    fill="#fffefe"
     stroke-opacity="1"
   />
+
+  <g data-testid="card-title" transform="translate(25, 35)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" class="header" data-testid="header">Hello World!!</text>
+    </g>
+  </g>
 </svg>
