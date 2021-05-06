@@ -1,7 +1,7 @@
 <svg
-  width="495"
-  height="195"
-  viewBox="0 0 495 195"
+  width="800"
+  height="400"
+  viewBox="0 0 800 400"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -36,14 +36,15 @@
     rx="4.5"
     height="99%"
     stroke="#e4e2e2"
-    width="494"
+    width="800"
     fill="#fffefe"
     stroke-opacity="1"
   />
 
   <g data-testid="card-title" transform="translate(25, 35)">
     <g transform="translate(0, 0)">
-      <text x="0" y="0" class="header" data-testid="header">Hello World!!</text>
+      <text x="0" y="0" class="header" data-testid="header">Hello!!</text>
+      <text x="0" y="20" class="header" data-testid="header">This card is currently under development.</text>
     </g>
   </g>
 </svg>
