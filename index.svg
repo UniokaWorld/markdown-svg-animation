@@ -19,10 +19,10 @@
 
     @keyframes Scale {
     from {
-      transform: scale(0) translate(450px, 95px);
+      transform: scale(0) translate(450px, 950px);
     }
     to {
-      transform: scale(1) translate(450px, 95px);
+      transform: scale(0.4,0.4) translate(1000px, 105px);
     }
   </style>
 
