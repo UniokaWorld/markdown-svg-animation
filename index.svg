@@ -7,14 +7,27 @@
 >
   <style>
     .header {
-      font: 600 34px "Segoe UI", Ubuntu, Sans-Serif;
+      font: 600 52px "Segoe UI", Ubuntu, Sans-Serif;
       fill: #fff;
-      animation: fadeInAnimation 0.8s ease-in-out forwards;
+    }
+    
+    .text{
+      font: 600 28px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #fff;
+    }
+    
+    .twitter-logo{
+      transform: scale(2,2) translate(20px,85px);
+      animation: loop 2.4s linear infinite;
+    }
+
+    .heart{
+      transform: scale(0.09,0.09) translate(450px, 2680px);
     }
 
     .ore{
       transform: scale(0);
-      animation: Scale 0.5s ease-in-out forwards;
+      animation: Scale 0.9s ease-in-out forwards;
     }
 
     @keyframes Scale {
@@ -24,6 +37,19 @@
     to {
       transform: scale(0.4,0.4) translate(850px, 105px);
     }
+    }
+    @keyframes loop {
+    0% {
+      transform: scale(2,2) translate(20px,90px);
+    }
+    50%{
+      transform: scale(2,2) translate(20px,80px);
+
+    }
+    to {
+      transform: scale(2,2) translate(20px,90px);
+    }
+}
   </style>
 
   <defs>
@@ -48,9 +74,20 @@
   />
 
   <g data-testid="card-title" transform="translate(25px, 35px)">
-    <g transform="translate(0, 0)">
-      <text x="30" y="60" class="header">Koki Okada</text>
+    <g class="home" transform="translate(0, 0)">
+      <text x="40" y="90" class="header">Unioka</text>
+      <text x="100" y="205" class="text">UniokaWorld</text>
+      <text x="100" y="270" class="text">Unity, XR</text>
     </g>
+  </g>
+  <g class="twitter-logo" fill="#fff">
+    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+  </g>
+  <g class="heart" fill="#fff">
+    <path d="M380.63,32.196C302.639,33.698,264.47,88.893,256,139.075c-8.47-50.182-46.638-105.378-124.63-106.879
+		C59.462,30.814,0,86.128,0,187.076c0,129.588,146.582,189.45,246.817,286.25c3.489,3.371,2.668,3.284,2.668,3.284
+		c1.647,2.031,4.014,3.208,6.504,3.208v0.011c0,0,0.006,0,0.011,0c0,0,0.006,0,0.011,0v-0.011c2.489,0,4.856-1.177,6.503-3.208
+		c0,0-0.821,0.086,2.669-3.284C365.418,376.526,512,316.664,512,187.076C512,86.128,452.538,30.814,380.63,32.196z"></path>
   </g>
   <g class="ore">
       <g fill="#19161a" >
