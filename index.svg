@@ -1,13 +1,13 @@
 <svg
-  width="800"
+  width="700"
   height="400"
-  viewBox="0 0 800 400"
+  viewBox="0 0 700 400"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <style>
     .header {
-      font: 600 18px "Segoe UI", Ubuntu, Sans-Serif;
+      font: 600 34px "Segoe UI", Ubuntu, Sans-Serif;
       fill: #fff;
       animation: fadeInAnimation 0.8s ease-in-out forwards;
     }
@@ -22,7 +22,7 @@
       transform: scale(0) translate(450px, 950px);
     }
     to {
-      transform: scale(0.4,0.4) translate(1000px, 105px);
+      transform: scale(0.4,0.4) translate(850px, 105px);
     }
   </style>
 
@@ -31,7 +31,7 @@
             id="gradient" 
             gradientTransform="rotate(30)"
           >
-            <stop offset="0%" stop-color="#e96443" />,<stop offset="100%" stop-color="#904e95" />
+            <stop offset="0%" stop-color="#17ead9" />,<stop offset="100%" stop-color="#6078ea" />
           </linearGradient>
   </defs>
 
@@ -49,8 +49,7 @@
 
   <g data-testid="card-title" transform="translate(25px, 35px)">
     <g transform="translate(0, 0)">
-      <text x="0" y="0" class="header" data-testid="header">Hello!!</text>
-      <text x="0" y="20" class="header" data-testid="header">This card is currently under development.</text>
+      <text x="30" y="60" class="header">Koki Okada</text>
     </g>
   </g>
   <g class="ore">
